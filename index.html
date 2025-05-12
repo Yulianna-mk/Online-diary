@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Твій особистий щоденик</title>
+    <title>Твій особистий щоденник</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <header>
+
+    <header>
         <h1>Thinking diary</h1>
-        <nav>
-            <a href="index.html">ГОЛОВНА</a>
-            <a href="entries.html">ЗАПИСИ</a>
+        <nav aria-label="Головне меню">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="entries.html">Записи</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <h2>Ласкаво просимо!</h2>
-        <p>Тут ти можеш залишити свої думки та події,які тобі запам'яталися! </p>
-        </main>
+        <section aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Ласкаво просимо!</h2>
+            <p>Тут ти можеш залишити свої думки та події, які тобі запам'яталися!</p>
+
+            <figure>
+                <img src="images/diary-cover.jpg" alt="Обкладинка щоденника на дерев’яному столі">
+                <figcaption>Почни записувати свої найцінніші спогади</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Твій особистий щоденник</p>
+    </footer>
+
 </body>
 </html>
