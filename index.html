@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Твій особистий щоденник</title>
+    <title>Твій особистий щоденик</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
+     
+    <header role="banner">
+        <!-- Логотип із альтернативним текстом -->
+        <a href="index.html" aria-label="Повернутися на головну">
+            <img src="logo.png" alt="Логотип сервісу Thinking diary" width="120" height="auto">
+        </a>
         <h1>Thinking diary</h1>
-        <nav aria-label="Головне меню">
+        <nav role="navigation" aria-label="Головне меню">
             <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="entries.html">Записи</a></li>
+                <li><a href="index.html">ГОЛОВНА</a></li>
+                <li><a href="entries.html">ЗАПИСИ</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main role="main">
         <section aria-labelledby="welcome-title">
             <h2 id="welcome-title">Ласкаво просимо!</h2>
-            <p>Тут ти можеш залишити свої думки та події, які тобі запам'яталися.</p>
-            <figure>
-                <img src="images/diary.jpg" alt="Зображення відкритого щоденника на столі">
-                <figcaption>Твій простір для особистих записів</figcaption>
-            </figure>
+            <p>Тут ти можеш залишити свої думки та події, які тобі запам’яталися.</p>
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 Твій особистий щоденник</p>
+    <footer role="contentinfo">
+        <p>© 2025 Thinking diary. Всі права захищені.</p>
     </footer>
 
 </body>
